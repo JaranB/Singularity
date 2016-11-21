@@ -1,0 +1,194 @@
+/*Settings generelt for siden start*/
+/* Christian sin kommentar */
+/*Tommy er kul*/
+* {
+    margin: 0;
+    padding: 0
+}
+
+a,
+h1 {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Settings generelt for siden slutt*/
+
+
+/*Navigator start*/
+
+header {
+    position: relative;
+    overflow: hidden;
+    background-color: #3A4047;
+}
+
+#logo {
+    float: left;
+    padding-left: 5%;
+    line-height: 20%;
+}
+
+ul {
+    list-style-type: none;
+    padding-right: 5%;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #b7ffff;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    line-height: 500%;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+/*Navigator slutt*/
+
+#navcontainer {
+    min-height: 100%;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*html, body start*/
+
+html,
+body {
+    background-image: url(bilder/bg.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#menu {
+    position: relative;
+    margin: auto;
+    top: 5%;
+    width: 35%;
+    height: 45%;
+}
+
+#menu:hover .circle {
+    -webkit-animation-play-state: paused;
+}
+
+/*Sirkler i menyen på hjemsiden start*/
+
+.circle {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    font-size: 1.3em;
+    color: #fff;
+    line-height: 1000%;
+    text-align: center;
+    background: #3A4047;
+    opacity: 0.97;
+}
+
+.circle1 {
+    margin-left: 35%;
+    -webkit-animation-name: circle1move;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.circle2 {
+    margin-top: 2em;
+    margin-left: 35%;
+    -webkit-animation-name: circle2move;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.circle3 {
+    margin-top: -16em;
+    -webkit-animation-name: circle3move;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.circle4 {
+    margin-top: -10em;
+    margin-left: 69%;
+    -webkit-animation-name: circle4move;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+/*Sirkler i menyen på hjemsiden stopp*/
+
+/*Velkommen tekst og slogan på hjemsiden start*/
+#hjemtekst {
+    text-align: center;
+    font-size: 6em;
+    color: #074B97;
+    margin-top: 5%;
+}
+
+#hjemslogan {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1em;
+    float: right;
+    margin-top: 0.5%;
+    padding-right: 32%;
+}
+
+/*Velkommen tekst og slogan på hjemsiden slutt*/
+
+/*Container med hovedinnhold på alle sider start*/
+
+#container {
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 5%;
+    border-radius: 2%;
+    background-color: #3A4047;
+    position: absolute;
+}
+
+/*Container med hovedinnhold på alle siden slutt*/
+
+
+
+
+/*html, body slutt*/
+
+
+/*Footer start*/
+
+footer {
+    background-color: #3A4047;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 250%;
+}
+
+
+/*Footer slutt*/
+
+

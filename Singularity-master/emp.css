@@ -1,0 +1,91 @@
+/*company-css*/
+#container {
+    position: relative;
+    height: 600px;
+    width: 978px;
+    background-color: white;
+    opacity: 0,5;
+    margin: auto;
+}
+.aniStop{
+    position: absolute;
+    top: 50%;
+    left: -300px;
+}
+#employee{
+    animation: moveAni 30s linear infinite;
+}
+#employee1{
+    animation: moveAni 30s linear infinite;
+    animation-delay: 5s;
+}
+#employee2{
+    animation: moveAni 30s linear infinite;
+    animation-delay: 10s;
+}
+#employee3{
+    animation: moveAni 30s linear infinite;
+    animation-delay: 15s;
+}
+#employee4{
+    animation: moveAni 30s linear infinite;
+    animation-delay: 20s;
+}
+#employee5{
+    animation: moveAni 30s linear infinite;
+    animation-delay: 25s;
+}
+#pics {
+    height:  200px;
+    width: 200px;
+    border-radius: 50%;
+}
+@keyframes moveAni {
+    from{
+        left: -300px;
+    }
+    to{
+        left: 2100px;
+    }
+}
+#container:hover .aniStop{
+    animation-play-state: paused;
+}
+.snakkeboble{
+    position: relative;
+    top: 100px;
+    height: 150px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 30%;
+    display: none;
+}
+
+#employee:hover ~ #textBox{
+    display: block;
+
+}
+#employee1:hover ~ #textBox1{
+    display: block;
+}
+#employee2:hover ~ #textBox2{
+    display: block;
+}
+#employee3:hover ~ #textBox3{
+    display: block;
+}
+#employee4:hover ~ #textBox4{
+    display: block;
+}
+#employee5:hover ~ #textBox5{
+    display: block;
+}
+
+
+
+
+
+
