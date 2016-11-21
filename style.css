@@ -273,10 +273,10 @@ footer {
 #company {
     position: relative;
     height: 600px;
-    width: 978px;
-    background-color: white;
+    width: 80%;
     opacity: 0,5;
     margin: auto;
+    overflow: hidden;
 }
 .aniStop{
     position: absolute;
