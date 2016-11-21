@@ -146,11 +146,19 @@ body {
 
 /*Velkommen tekst og slogan på hjemsiden start*/
 
-#hjemtekst {
+.hjemtekst {
+    margin: auto;
     text-align: center;
     font-size: 6em;
     color: #074B97;
     margin-top: 5%;
+    animation: fylltekst 4s;
+}
+
+.line{
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
 }
 
 #hjemslogan {
@@ -273,9 +281,12 @@ footer {
     }
 }
 
-@keyframes glowmove {
+@keyframes fylltekst {
+    0% {
+        width: 0;
+    }
     100% {
-        transform: rotate(360deg);
+        width: 11em;
     }
 }
 
@@ -427,7 +438,6 @@ footer {
     position: relative;
     margin: auto;
     height: 600px;
-
 }
 
 #kart {
@@ -435,7 +445,6 @@ footer {
     width: 900px;
     height: 400px;
     top: 150px;
-
 }
 
 .map_dot {
