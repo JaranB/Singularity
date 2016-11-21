@@ -167,11 +167,7 @@ body {
 
 /*Container med hovedinnhold på alle siden slutt*/
 
-#egenskaper {
-    background-color: darkgrey;
-    width: 600px;
-    height: 300px;
-    border-radius: 50%;
+#sideinnhold {
     text-align: center;
     padding: 6%;
     position: relative;
@@ -188,7 +184,7 @@ body {
 
 footer {
     background-color: #3A4047;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     height: 4%;
