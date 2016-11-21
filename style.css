@@ -479,6 +479,8 @@ footer {
     border-radius: 25px;
 }
 
+/*Alle .by:hover{} nedover er laget for at prikken ikke skal bli helt feil plassert når man hovrer. Den blir flyttet 5 piksler til venstre og oppover for at det ikke skal uferdig/choppy ut. Det vil også bli mye lettere å holde musepeker over sirkel*/
+
 #oslo1 {
     opacity: 0;
     position: absolute;
