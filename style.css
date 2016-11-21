@@ -159,6 +159,7 @@ body {
 #container {
     width: 90%;
     margin-top: 2%;
+    margin-bottom: 4%;
     margin-left: 5%;
     border-radius: 2%;
     background-color: #3A4047;
@@ -169,11 +170,9 @@ body {
 
 #sideinnhold {
     text-align: center;
-    padding: 6%;
     position: relative;
     margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding: 1%;
 }
 
 
