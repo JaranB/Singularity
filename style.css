@@ -447,6 +447,7 @@ footer {
     top: 150px;
 }
 
+/*En klasse for å gjøre design av prikker på kartet felles. Alle blir røde, alle har lengde og bredde 10px og en border-radius på 10px for å gjøre de runde*/
 .map_dot {
     background-color: #a60808;
     width: 10px;
@@ -455,12 +456,14 @@ footer {
     position: absolute;
 }
 
+/*Felles hover for alle i map_dot klassen. Når peker er på prikk så vil den bli større, 25x25px*/
 .map_dot:hover {
     width: 25px;
     height: 25px;
     border-radius: 25px;
 }
 
+/*map_dot2 klasse for å lage gul prikk*/
 .map_dot2 {
     background-color: yellow;
     width: 10px;
@@ -469,6 +472,7 @@ footer {
     position: absolute;
 }
 
+/*Hover effekt på alle prikker i klassen map_dot2*/
 .map_dot2:hover {
     width: 25px;
     height: 25px;
