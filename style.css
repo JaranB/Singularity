@@ -11,6 +11,12 @@ h1 {
     font-family: 'Lato', sans-serif;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+
+
 /*Settings generelt for siden slutt*/
 
 
@@ -84,6 +90,7 @@ body {
     -webkit-animation-play-state: paused;
 }
 
+
 /*Sirkler i menyen på hjemsiden start*/
 
 .circle {
@@ -133,9 +140,12 @@ body {
     -webkit-animation-iteration-count: infinite;
 }
 
+
 /*Sirkler i menyen på hjemsiden stopp*/
 
+
 /*Velkommen tekst og slogan på hjemsiden start*/
+
 #hjemtekst {
     text-align: center;
     font-size: 6em;
@@ -152,28 +162,31 @@ body {
     padding-right: 32%;
 }
 
+
 /*Velkommen tekst og slogan på hjemsiden slutt*/
+
 
 /*Container med hovedinnhold på alle sider start*/
 
 #container {
     width: 90%;
+    height: auto;
     margin-top: 2%;
+    margin-bottom: 4%;
     margin-left: 5%;
     border-radius: 2%;
     background-color: #3A4047;
     position: absolute;
 }
 
+
 /*Container med hovedinnhold på alle siden slutt*/
 
 #sideinnhold {
     text-align: center;
-    padding: 6%;
     position: relative;
     margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding: 1%;
 }
 
 
@@ -269,60 +282,73 @@ footer {
 
 /*Animasjoner slutt*/
 
+
 /*company-css-tommy*/
+
 #company {
     position: relative;
     height: 600px;
     width: 80%;
-    opacity: 0,5;
+    opacity: 0, 5;
     margin: auto;
     overflow: hidden;
 }
-.companyAni{
+
+.companyAni {
     position: absolute;
     top: 50%;
     left: -300px;
 }
-#employee{
+
+#employee {
     animation: moveAni 30s linear infinite;
 }
-#employee1{
+
+#employee1 {
     animation: moveAni 30s linear infinite;
     animation-delay: 5s;
 }
-#employee2{
+
+#employee2 {
     animation: moveAni 30s linear infinite;
     animation-delay: 10s;
 }
-#employee3{
+
+#employee3 {
     animation: moveAni 30s linear infinite;
     animation-delay: 15s;
 }
-#employee4{
+
+#employee4 {
     animation: moveAni 30s linear infinite;
     animation-delay: 20s;
 }
-#employee5{
+
+#employee5 {
     animation: moveAni 30s linear infinite;
     animation-delay: 25s;
 }
+
 #pics {
-    height:  200px;
+    height: 200px;
     width: 200px;
     border-radius: 50%;
 }
+
 @keyframes moveAni {
-    from{
+    from {
         left: -300px;
     }
-    to{
+    to {
         left: 2100px;
     }
 }
-#container:hover .companyAni{
+
+#container:hover .companyAni {
     animation-play-state: paused;
 }
-.chat{
+
+.chat {
     position: relative;
     top: 100px;
     height: 150px;
@@ -335,28 +361,33 @@ footer {
     display: none;
 }
 
-#employee:hover ~ #textBox{
+#employee:hover~#textBox {
     display: block;
+}
 
-}
-#employee1:hover ~ #textBox1{
+#employee1:hover~#textBox1 {
     display: block;
 }
-#employee2:hover ~ #textBox2{
+
+#employee2:hover~#textBox2 {
     display: block;
 }
-#employee3:hover ~ #textBox3{
+
+#employee3:hover~#textBox3 {
     display: block;
 }
-#employee4:hover ~ #textBox4{
+
+#employee4:hover~#textBox4 {
     display: block;
 }
-#employee5:hover ~ #textBox5{
+
+#employee5:hover~#textBox5 {
     display: block;
 }
 
 
 /*Markus*/
+
 #kartContainer {
     margin: auto;
     position: relative;
@@ -370,6 +401,7 @@ footer {
     background-color: red;
     border-radius: 20px;
     position: absolute;
+    top: 5%;
 }
 
 #fakta1 p {
@@ -383,25 +415,27 @@ footer {
     background-color: blue;
     border-radius: 20px;
     position: absolute;
+    top: 5%;
 }
 
 #fakta2 p {
-
     position: relative;
 }
 
 #kart_boks {
-    top: 150px;
     width: 900px;
-    height: 100%;
     position: relative;
+    margin: auto;
+    height: 600px;
+
 }
 
 #kart {
-    position: absolute;
+    position: relative;
     width: 900px;
     height: 400px;
     top: 150px;
+
 }
 
 .map_dot {
@@ -452,11 +486,11 @@ footer {
     top: 200px;
 }
 
-.oslo:hover ~ #fakta1 > #oslo1 {
+.oslo:hover~#fakta1>#oslo1 {
     opacity: 1;
 }
 
-.oslo:hover ~ #fakta2 > #oslo2 {
+.oslo:hover~#fakta2>#oslo2 {
     opacity: 1;
 }
 
@@ -480,11 +514,11 @@ footer {
     top: 253px;
 }
 
-.roma:hover ~ #fakta1 > #roma1 {
+.roma:hover~#fakta1>#roma1 {
     opacity: 1;
 }
 
-.roma:hover ~ #fakta2 > #roma2 {
+.roma:hover~#fakta2>#roma2 {
     opacity: 1;
 }
 
@@ -508,11 +542,11 @@ footer {
     top: 450px;
 }
 
-.johannesburg:hover ~ #fakta1 > #johannesburg1 {
+.johannesburg:hover~#fakta1>#johannesburg1 {
     opacity: 1;
 }
 
-.johannesburg:hover ~ #fakta2 > #johannesburg2 {
+.johannesburg:hover~#fakta2>#johannesburg2 {
     opacity: 1;
 }
 
@@ -536,11 +570,11 @@ footer {
     top: 255px;
 }
 
-.new_york_city:hover ~ #fakta1 > #new_york_city1 {
+.new_york_city:hover~#fakta1>#new_york_city1 {
     opacity: 1;
 }
 
-.new_york_city:hover ~ #fakta2 > #new_york_city2 {
+.new_york_city:hover~#fakta2>#new_york_city2 {
     opacity: 1;
 }
 
@@ -564,11 +598,11 @@ footer {
     top: 215px;
 }
 
-.moscow:hover ~ #fakta1 > #moscow1 {
+.moscow:hover~#fakta1>#moscow1 {
     opacity: 1;
 }
 
-.moscow:hover ~ #fakta2 > #moscow2 {
+.moscow:hover~#fakta2>#moscow2 {
     opacity: 1;
 }
 
@@ -592,11 +626,11 @@ footer {
     top: 465px;
 }
 
-.sydney:hover ~ #fakta1 > #sydney1 {
+.sydney:hover~#fakta1>#sydney1 {
     opacity: 1;
 }
 
-.sydney:hover ~ #fakta2 > #sydney2 {
+.sydney:hover~#fakta2>#sydney2 {
     opacity: 1;
 }
 
@@ -623,11 +657,11 @@ footer {
     top: 425px;
 }
 
-.brasilia:hover ~ #fakta1 > #brasilia1 {
+.brasilia:hover~#fakta1>#brasilia1 {
     opacity: 1;
 }
 
-.brasilia:hover ~ #fakta2 > #brasilia2 {
+.brasilia:hover~#fakta2>#brasilia2 {
     opacity: 1;
 }
 
@@ -651,11 +685,11 @@ footer {
     top: 278px;
 }
 
-.shanghai:hover ~ #fakta1 > #shanghai1 {
+.shanghai:hover~#fakta1>#shanghai1 {
     opacity: 1;
 }
 
-.shanghai:hover ~ #fakta2 > #shanghai2 {
+.shanghai:hover~#fakta2>#shanghai2 {
     opacity: 1;
 }
 
@@ -679,11 +713,11 @@ footer {
     top: 250px;
 }
 
-.beijing:hover ~ #fakta1 > #beijing1 {
+.beijing:hover~#fakta1>#beijing1 {
     opacity: 1;
 }
 
-.beijing:hover ~ #fakta2 > #beijing2 {
+.beijing:hover~#fakta2>#beijing2 {
     opacity: 1;
 }
 
@@ -707,11 +741,11 @@ footer {
     top: 280px;
 }
 
-.tibet:hover ~ #fakta1 > #tibet1 {
+.tibet:hover~#fakta1>#tibet1 {
     opacity: 1;
 }
 
-.tibet:hover ~ #fakta2 > #tibet2 {
+.tibet:hover~#fakta2>#tibet2 {
     opacity: 1;
 }
 
@@ -735,11 +769,11 @@ footer {
     top: 275px;
 }
 
-.dalas:hover ~ #fakta1 > #dalas1 {
+.dalas:hover~#fakta1>#dalas1 {
     opacity: 1;
 }
 
-.dalas:hover ~ #fakta2 > #dalas2 {
+.dalas:hover~#fakta2>#dalas2 {
     opacity: 1;
 }
 
@@ -763,14 +797,10 @@ footer {
     top: 355px;
 }
 
-.niamey:hover ~ #fakta1 > #niamey1 {
+.niamey:hover~#fakta1>#niamey1 {
     opacity: 1;
 }
 
-.niamey:hover ~ #fakta2 > #niamey2 {
+.niamey:hover~#fakta2>#niamey2 {
     opacity: 1;
 }
-
-
-
-
