@@ -344,7 +344,7 @@ footer {
     }
 }
 
-#container:hover .companyAni {
+#company:hover .companyAni {
     animation-play-state: paused;
 }
 
