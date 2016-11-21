@@ -278,7 +278,7 @@ footer {
     margin: auto;
     overflow: hidden;
 }
-.aniStop{
+.companyAni{
     position: absolute;
     top: 50%;
     left: -300px;
@@ -322,7 +322,7 @@ footer {
 #container:hover .aniStop{
     animation-play-state: paused;
 }
-.snakkeboble{
+.chat{
     position: relative;
     top: 100px;
     height: 150px;
