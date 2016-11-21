@@ -159,6 +159,7 @@ body {
 #container {
     width: 90%;
     margin-top: 2%;
+    margin-bottom: 4%;
     margin-left: 5%;
     border-radius: 2%;
     background-color: #3A4047;
@@ -169,11 +170,9 @@ body {
 
 #sideinnhold {
     text-align: center;
-    padding: 6%;
     position: relative;
     margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding: 1%;
 }
 
 
@@ -278,7 +277,7 @@ footer {
     margin: auto;
     overflow: hidden;
 }
-.aniStop{
+.companyAni{
     position: absolute;
     top: 50%;
     left: -300px;
@@ -319,10 +318,10 @@ footer {
         left: 2100px;
     }
 }
-#container:hover .aniStop{
+#container:hover .companyAni{
     animation-play-state: paused;
 }
-.snakkeboble{
+.chat{
     position: relative;
     top: 100px;
     height: 150px;
