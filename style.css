@@ -356,7 +356,420 @@ footer {
 }
 
 
+/*Markus*/
+#kartContainer {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
+#fakta1 {
+    width: 45%;
+    height: 115px;
+    background-color: red;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#fakta1 p {
+    position: relative;
+}
+
+#fakta2 {
+    width: 45%;
+    height: 115px;
+    right: 0px;
+    background-color: blue;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#fakta2 p {
+
+    position: relative;
+}
+
+#kart_boks {
+    top: 150px;
+    width: 900px;
+    height: 100%;
+    position: relative;
+}
+
+#kart {
+    position: absolute;
+    width: 900px;
+    height: 400px;
+    top: 150px;
+}
+
+.map_dot {
+    background-color: #a60808;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.map_dot:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.map_dot2 {
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.map_dot2:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+#oslo1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#oslo2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.oslo {
+    left: 396px;
+    top: 205px;
+}
+
+.oslo:hover {
+    left: 391px;
+    top: 200px;
+}
+
+.oslo:hover ~ #fakta1 > #oslo1 {
+    opacity: 1;
+}
+
+.oslo:hover ~ #fakta2 > #oslo2 {
+    opacity: 1;
+}
+
+#roma1 {
+    position: absolute;
+    opacity: 0;
+}
+
+#roma2 {
+    position: absolute;
+    opacity: 0;
+}
+
+.roma {
+    left: 405px;
+    top: 258px;
+}
+
+.roma:hover {
+    left: 400px;
+    top: 253px;
+}
+
+.roma:hover ~ #fakta1 > #roma1 {
+    opacity: 1;
+}
+
+.roma:hover ~ #fakta2 > #roma2 {
+    opacity: 1;
+}
+
+#johannesburg1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#johannesburg2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.johannesburg {
+    left: 445px;
+    top: 455px;
+}
+
+.johannesburg:hover {
+    left: 440px;
+    top: 450px;
+}
+
+.johannesburg:hover ~ #fakta1 > #johannesburg1 {
+    opacity: 1;
+}
+
+.johannesburg:hover ~ #fakta2 > #johannesburg2 {
+    opacity: 1;
+}
+
+.new_york_city {
+    left: 180px;
+    top: 260px;
+}
+
+#new_york_city1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#new_york_city2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.new_york_city:hover {
+    left: 175px;
+    top: 255px;
+}
+
+.new_york_city:hover ~ #fakta1 > #new_york_city1 {
+    opacity: 1;
+}
+
+.new_york_city:hover ~ #fakta2 > #new_york_city2 {
+    opacity: 1;
+}
+
+#moscow1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#moscow2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.moscow {
+    left: 460px;
+    top: 220px;
+}
+
+.moscow:hover {
+    left: 455px;
+    top: 215px;
+}
+
+.moscow:hover ~ #fakta1 > #moscow1 {
+    opacity: 1;
+}
+
+.moscow:hover ~ #fakta2 > #moscow2 {
+    opacity: 1;
+}
+
+#sydney1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#sydney2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.sydney {
+    left: 765px;
+    top: 470px;
+}
+
+.sydney:hover {
+    left: 760px;
+    top: 465px;
+}
+
+.sydney:hover ~ #fakta1 > #sydney1 {
+    opacity: 1;
+}
+
+.sydney:hover ~ #fakta2 > #sydney2 {
+    opacity: 1;
+}
+
+
+/*Brasília, hovedstad i brazil*/
+
+#brasilia1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#brasilia2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.brasilia {
+    left: 240px;
+    top: 430px;
+}
+
+.brasilia:hover {
+    left: 235px;
+    top: 425px;
+}
+
+.brasilia:hover ~ #fakta1 > #brasilia1 {
+    opacity: 1;
+}
+
+.brasilia:hover ~ #fakta2 > #brasilia2 {
+    opacity: 1;
+}
+
+#shanghai1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#shanghai2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.shanghai {
+    left: 685px;
+    top: 283px;
+}
+
+.shanghai:hover {
+    left: 680px;
+    top: 278px;
+}
+
+.shanghai:hover ~ #fakta1 > #shanghai1 {
+    opacity: 1;
+}
+
+.shanghai:hover ~ #fakta2 > #shanghai2 {
+    opacity: 1;
+}
+
+#beijing1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#beijing2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.beijing {
+    left: 670px;
+    top: 255px;
+}
+
+.beijing:hover {
+    left: 665px;
+    top: 250px;
+}
+
+.beijing:hover ~ #fakta1 > #beijing1 {
+    opacity: 1;
+}
+
+.beijing:hover ~ #fakta2 > #beijing2 {
+    opacity: 1;
+}
+
+#tibet1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#tibet2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.tibet {
+    left: 615px;
+    top: 285px;
+}
+
+.tibet:hover {
+    left: 610px;
+    top: 280px;
+}
+
+.tibet:hover ~ #fakta1 > #tibet1 {
+    opacity: 1;
+}
+
+.tibet:hover ~ #fakta2 > #tibet2 {
+    opacity: 1;
+}
+
+#dalas1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#dalas2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.dalas {
+    left: 120px;
+    top: 280px;
+}
+
+.dalas:hover {
+    left: 115px;
+    top: 275px;
+}
+
+.dalas:hover ~ #fakta1 > #dalas1 {
+    opacity: 1;
+}
+
+.dalas:hover ~ #fakta2 > #dalas2 {
+    opacity: 1;
+}
+
+#niamey1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#niamey2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.niamey {
+    left: 419px;
+    top: 360px;
+}
+
+.niamey:hover {
+    left: 414px;
+    top: 355px;
+}
+
+.niamey:hover ~ #fakta1 > #niamey1 {
+    opacity: 1;
+}
+
+.niamey:hover ~ #fakta2 > #niamey2 {
+    opacity: 1;
+}
 
 
 
