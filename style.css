@@ -11,6 +11,11 @@ h1 {
     font-family: 'Lato', sans-serif;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+
 
 /*Settings generelt for siden slutt*/
 
@@ -165,7 +170,7 @@ body {
 
 #container {
     width: 90%;
-    height: 100%;
+    height: auto;
     margin-top: 2%;
     margin-bottom: 4%;
     margin-left: 5%;
@@ -396,6 +401,7 @@ footer {
     background-color: red;
     border-radius: 20px;
     position: absolute;
+    top: 5%;
 }
 
 #fakta1 p {
@@ -409,6 +415,7 @@ footer {
     background-color: blue;
     border-radius: 20px;
     position: absolute;
+    top: 5%;
 }
 
 #fakta2 p {
@@ -416,17 +423,19 @@ footer {
 }
 
 #kart_boks {
-    top: 150px;
     width: 900px;
-    height: 100%;
     position: relative;
+    margin: auto;
+    height: 600px;
+
 }
 
 #kart {
-    position: absolute;
+    position: relative;
     width: 900px;
     height: 400px;
     top: 150px;
+
 }
 
 .map_dot {
