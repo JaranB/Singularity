@@ -319,7 +319,7 @@ footer {
         left: 2100px;
     }
 }
-#container:hover .aniStop{
+#container:hover .companyAni{
     animation-play-state: paused;
 }
 .chat{
