@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 a,
@@ -67,13 +67,17 @@ li a:hover {
 
 /*html, body start*/
 
-html,
+html {
+    height: 100%;
+}
+
 body {
+    position: relative;
     background-image: url(bilder/bg.jpg); /* https://pbs.twimg.com/media/Cw2GfpTUkAAPhzW.jpg */
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
 }
 
 #menu {
@@ -165,6 +169,7 @@ body {
 #hjemslogantekst {
     width: 1060px;
     margin: auto;
+    overflow: hidden;
 }
 
 /*Velkommen tekst og slogan på hjemsiden slutt*/
@@ -176,11 +181,10 @@ body {
     width: 90%;
     height: auto;
     margin-top: 2%;
-    margin-bottom: 4%;
     margin-left: 5%;
     border-radius: 2%;
     background-color: #3A4047;
-    position: absolute;
+    position: relative;
 }
 
 
@@ -204,11 +208,10 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
+    right: 0;
     height: 40px;
-    width: 100%;
-    overflow: hidden;
     text-align: center;
-
+    margin-top: 100px;
 }
 
  p {
