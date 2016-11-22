@@ -418,6 +418,7 @@ footer {
 
 #fakta1 p {
     position: relative;
+    text-align: left;
 }
 
 #fakta2 {
@@ -432,6 +433,7 @@ footer {
 
 #fakta2 p {
     position: relative;
+    text-align: left;
 }
 
 #kart_boks {
@@ -857,7 +859,7 @@ footer {
     display: inline-block;
     height: 1%;
     width: 4%;
-    background-color: blue;
+    background-color: black;
     border-radius: 30px;
     opacity: 0;
 }
@@ -1129,7 +1131,7 @@ footer {
 .CTyearP{
 
     font-family: cursive;
-    margin-left: 17%;
+    margin-left: 13%;
     margin-top: 20%;
 }
 
