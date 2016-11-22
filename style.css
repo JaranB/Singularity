@@ -843,7 +843,7 @@ footer {
 
 #CTcontainer{
 
-    position: absolute;
+    position: relative;
     display: block;
     height: 600px;
     width: 90%;
