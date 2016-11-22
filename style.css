@@ -915,7 +915,7 @@ footer {
     top: 23%;
     left: 40%;
     animation-name: FadeIn;
-    animation-delay: 3s;
+    animation-delay: 4s;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 
@@ -925,7 +925,7 @@ footer {
     top: 39%;
     left: 54%;
     animation-name: FadeIn;
-    animation-delay: 5s;
+    animation-delay: 8s;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 
@@ -935,7 +935,7 @@ footer {
     top: 55%;
     left: 40%;
     animation-name: FadeIn;
-    animation-delay: 7s;
+    animation-delay: 12s;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 
@@ -945,7 +945,7 @@ footer {
     top: 71%;
     left: 54%;
     animation-name: FadeIn;
-    animation-delay: 9s;
+    animation-delay: 16s;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 
@@ -969,7 +969,7 @@ footer {
     top: 19%;
     animation-name: enterfromright;
     animation-duration: 1s;
-    animation-delay: 3s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 
@@ -981,7 +981,7 @@ footer {
     top: 35%;
     animation-name: enterfromleft;
     animation-duration: 1s;
-    animation-delay: 5s;
+    animation-delay: 8s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 
@@ -993,7 +993,7 @@ footer {
     top: 51%;
     animation-name: enterfromright;
     animation-duration: 1s;
-    animation-delay: 7s;
+    animation-delay: 12s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 
@@ -1005,7 +1005,7 @@ footer {
     top: 67%;
     animation-name: enterfromleft;
     animation-duration: 1s;
-    animation-delay: 9s;
+    animation-delay: 16s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 
@@ -1059,7 +1059,7 @@ footer {
     top: 16%;
     animation-name: fall;
     animation-duration: 0.5s;
-    animation-delay: 3.7s;
+    animation-delay: 4.7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
@@ -1070,7 +1070,7 @@ footer {
     top: 32%;
     animation-name: fall;
     animation-duration: 0.5s;
-    animation-delay: 5.7s;
+    animation-delay: 8.7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
@@ -1081,7 +1081,7 @@ footer {
     top: 48%;
     animation-name: fall;
     animation-duration: 0.5s;
-    animation-delay: 7.7s;
+    animation-delay: 12.7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
@@ -1092,7 +1092,7 @@ footer {
     top: 64%;
     animation-name: fall;
     animation-duration: 0.5s;
-    animation-delay: 9.7s;
+    animation-delay: 16.7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
