@@ -31,12 +31,12 @@ header {
     position: relative;
     overflow: hidden;
     background-color: #3A4047;
+    max-height: 100px;
 }
 
 #logo {
     float: left;
     padding-left: 5%;
-    line-height: 20%;
 }
 
 ul {
@@ -49,7 +49,7 @@ li {
 }
 
 li a {
-    display: block;
+    display: inline-block;
     color: #b7ffff;
     text-align: center;
     padding: 10px 30px;
@@ -75,6 +75,7 @@ body {
     position: relative;
     background-image: url(bilder/bg.jpg); /* https://pbs.twimg.com/media/Cw2GfpTUkAAPhzW.jpg */
     background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     min-height: 100%;
@@ -92,6 +93,9 @@ body {
     -webkit-animation-play-state: paused;
 }
 
+#container1 {
+    overflow: hidden;
+}
 
 /*Sirkler i menyen på hjemsiden start*/
 
@@ -161,13 +165,13 @@ body {
     font-size: 1em;
     float: right;
     margin-top: 0.5%;
-    padding-right: 15%;
+    padding-right: 30%;
     animation: fyllslogantekst 4s;
 
 }
 
 #hjemslogantekst {
-    width: 1060px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -297,7 +301,7 @@ footer {
 
 @keyframes fyllslogantekst {
     0% {
-        -webkit-transform: translate(260%);
+        -webkit-transform: translate(200%);
     }
     100% {
         -webkit-transform: translate(0%);
@@ -429,10 +433,10 @@ footer {
     border-radius: 20px;
     position: absolute;
     top: 5%;
+    overflow: hidden;
 }
 
 #fakta1 p {
-    position: relative;
     text-align: left;
 }
 
@@ -444,26 +448,31 @@ footer {
     border-radius: 20px;
     position: absolute;
     top: 5%;
+    overflow: hidden;
 }
 
 #fakta2 p {
-    position: relative;
     text-align: left;
 }
 
 #kart_boks {
-    width: 900px;
     position: relative;
+    width: 900px;
     margin: auto;
     height: 600px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-#kart {
+#kart_boks img {
+    height: auto;
+    max-width: 100%;
     position: relative;
     width: 900px;
     height: 400px;
     top: 150px;
 }
+
 
 /*En klasse for å gjøre design av prikker på kartet felles. Alle blir røde, alle har lengde og bredde 10px og en border-radius på 10px for å gjøre de runde*/
 .map_dot {
@@ -510,8 +519,8 @@ footer {
 }
 
 .oslo {
-    left: 396px;
-    top: 205px;
+    left: 44%;
+    top: 35%;
 }
 
 .oslo:hover {
@@ -538,8 +547,8 @@ footer {
 }
 
 .roma {
-    left: 405px;
-    top: 258px;
+    left: 45%;
+    top: 43%;
 }
 
 .roma:hover {
@@ -566,8 +575,8 @@ footer {
 }
 
 .johannesburg {
-    left: 445px;
-    top: 455px;
+    left: 50%;
+    top: 76%;
 }
 
 .johannesburg:hover {
@@ -584,8 +593,8 @@ footer {
 }
 
 .new_york_city {
-    left: 180px;
-    top: 260px;
+    left: 20%;
+    top: 43%;
 }
 
 #new_york_city1 {
@@ -622,8 +631,8 @@ footer {
 }
 
 .moscow {
-    left: 460px;
-    top: 220px;
+    left: 51%;
+    top: 37%;
 }
 
 .moscow:hover {
@@ -650,8 +659,8 @@ footer {
 }
 
 .sydney {
-    left: 765px;
-    top: 470px;
+    left: 85%;
+    top: 79%;
 }
 
 .sydney:hover {
@@ -681,8 +690,8 @@ footer {
 }
 
 .brasilia {
-    left: 240px;
-    top: 430px;
+    left: 27%;
+    top: 72%;
 }
 
 .brasilia:hover {
@@ -709,8 +718,8 @@ footer {
 }
 
 .shanghai {
-    left: 685px;
-    top: 283px;
+    left: 76%;
+    top: 47%;
 }
 
 .shanghai:hover {
@@ -737,8 +746,8 @@ footer {
 }
 
 .beijing {
-    left: 670px;
-    top: 255px;
+    left: 74%;
+    top: 43%;
 }
 
 .beijing:hover {
@@ -765,8 +774,8 @@ footer {
 }
 
 .tibet {
-    left: 615px;
-    top: 285px;
+    left: 69%;
+    top: 48%;
 }
 
 .tibet:hover {
@@ -793,8 +802,8 @@ footer {
 }
 
 .dalas {
-    left: 120px;
-    top: 280px;
+    left: 13%;
+    top: 47%;
 }
 
 .dalas:hover {
@@ -821,8 +830,8 @@ footer {
 }
 
 .niamey {
-    left: 419px;
-    top: 360px;
+    left: 46%;
+    top: 60%;
 }
 
 .niamey:hover {
@@ -1140,10 +1149,11 @@ footer {
 #slides{
     background: black;
     border: 5px solid white;
-    height: 392px;
+    height: auto;
     width: 700px;
     margin: auto;
     position: relative;
+    max-width: 100%;
 }
 /* Skjuler bildene utenfor rammen */
 #hiddenslides{
