@@ -903,7 +903,7 @@ footer {
 }
 
 #CTsmallbar1{
-    top: 7%;
+    top: 7.5%;
     left: 54%;
     animation-name: FadeIn;
     animation-delay: 1s;
@@ -915,7 +915,7 @@ footer {
 
 
 #CTsmallbar2{
-    top: 23%;
+    top: 27.5%;
     left: 40%;
     animation-name: FadeIn;
     animation-delay: 4s;
@@ -925,7 +925,7 @@ footer {
 }
 
 #CTsmallbar3{
-    top: 39%;
+    top: 47.5%;
     left: 54%;
     animation-name: FadeIn;
     animation-delay: 8s;
@@ -935,7 +935,7 @@ footer {
 }
 
 #CTsmallbar4{
-    top: 55%;
+    top: 67.5%;
     left: 40%;
     animation-name: FadeIn;
     animation-delay: 12s;
@@ -945,7 +945,7 @@ footer {
 }
 
 #CTsmallbar5{
-    top: 71%;
+    top: 87.5%;
     left: 54%;
     animation-name: FadeIn;
     animation-delay: 16s;
@@ -969,7 +969,7 @@ footer {
 #CTyearbubble2{
 
     right: -10%;
-    top: 19%;
+    top: 23%;
     animation-name: enterfromright;
     animation-duration: 1s;
     animation-delay: 4s;
@@ -981,7 +981,7 @@ footer {
 #CTyearbubble3{
 
     right: -10%;
-    top: 35%;
+    top: 43%;
     animation-name: enterfromleft;
     animation-duration: 1s;
     animation-delay: 8s;
@@ -993,7 +993,7 @@ footer {
 #CTyearbubble4{
 
     right: -10%;
-    top: 51%;
+    top: 63%;
     animation-name: enterfromright;
     animation-duration: 1s;
     animation-delay: 12s;
@@ -1005,7 +1005,7 @@ footer {
 #CTyearbubble5{
 
     right: -10%;
-    top: 67%;
+    top: 83%;
     animation-name: enterfromleft;
     animation-duration: 1s;
     animation-delay: 16s;
@@ -1013,12 +1013,6 @@ footer {
     animation-timing-function: linear;
 
 }
-
-
-
-
-
-
 
 @keyframes enterfromleft{
     0%{
@@ -1041,9 +1035,6 @@ footer {
 
 }
 
-
-
-
 #CTtextbubble1{
 
     left: 60%;
@@ -1059,7 +1050,7 @@ footer {
 #CTtextbubble2{
 
     left: 3%;
-    top: 16%;
+    top: 20%;
     animation-name: fall;
     animation-duration: 0.5s;
     animation-delay: 4.7s;
@@ -1070,7 +1061,7 @@ footer {
 #CTtextbubble3{
 
     left: 60%;
-    top: 32%;
+    top: 40%;
     animation-name: fall;
     animation-duration: 0.5s;
     animation-delay: 8.7s;
@@ -1081,7 +1072,7 @@ footer {
 #CTtextbubble4{
 
     left: 3%;
-    top: 48%;
+    top: 60%;
     animation-name: fall;
     animation-duration: 0.5s;
     animation-delay: 12.7s;
@@ -1092,7 +1083,7 @@ footer {
 #CTtextbubble5{
 
     left: 60%;
-    top: 64%;
+    top: 80%;
     animation-name: fall;
     animation-duration: 0.5s;
     animation-delay: 16.7s;
