@@ -176,11 +176,13 @@ body {
 
 
 /*Container med hovedinnhold på alle sider start*/
-
+footer, .push{
+    height: 70px;
+}
 #container {
     width: 90%;
     height: auto;
-    margin-top: 2%;
+    margin-top: 30px;
     margin-left: 5%;
     border-radius: 2%;
     background-color: #3A4047;
@@ -211,7 +213,6 @@ footer {
     right: 0;
     height: 40px;
     text-align: center;
-    margin-top: 100px;
 }
 
  p {
@@ -423,7 +424,7 @@ footer {
 #fakta1 {
     width: 45%;
     height: 115px;
-    background-color: darkgrey;
+    background-color: whitesmoke;
     border-radius: 20px;
     position: absolute;
     top: 5%;
@@ -438,7 +439,7 @@ footer {
     width: 45%;
     height: 115px;
     right: 0px;
-    background-color: darkgrey;
+    background-color: whitesmoke;
     border-radius: 20px;
     position: absolute;
     top: 5%;
