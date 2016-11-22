@@ -940,15 +940,6 @@ footer {
 
 }
 
-#CTsmallbar6{
-    top: 87%;
-    left: 40%;
-    animation-name: FadeIn;
-    animation-delay: 11s;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-
-}
 
 #CTyearbubble1{
 
@@ -1010,17 +1001,6 @@ footer {
 }
 
 
-#CTyearbubble6{
-
-    right: -10%;
-    top: 83%;
-    animation-name: enterfromright;
-    animation-duration: 1s;
-    animation-delay: 11s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-
-}
 
 
 
@@ -1107,16 +1087,7 @@ footer {
 }
 
 
-#CTtextbubble6{
 
-    left: 3%;
-    top: 80%;
-    animation-name: fall;
-    animation-duration: 0.5s;
-    animation-delay: 11.7s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-}
 
 
 .CTp{
