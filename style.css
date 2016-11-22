@@ -420,7 +420,7 @@ footer {
 #fakta1 {
     width: 45%;
     height: 115px;
-    background-color: whitesmoke;
+    background-color: darkgrey;
     border-radius: 20px;
     position: absolute;
     top: 5%;
@@ -435,7 +435,7 @@ footer {
     width: 45%;
     height: 115px;
     right: 0px;
-    background-color: whitesmoke;
+    background-color: darkgrey;
     border-radius: 20px;
     position: absolute;
     top: 5%;
