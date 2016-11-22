@@ -1108,14 +1108,12 @@ footer {
     display: inline-block;
     padding: 5px;
     text-align: center;
-    font-family:'lato', sans-serif;
     font-size: 15px;
 }
 
 .CTyearP{
-
-    font-family: cursive;
-    margin-left: 13%;
+    margin-top: 4%;
+    margin-left: 18%;
 }
 
 @keyframes fall{
