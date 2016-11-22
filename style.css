@@ -146,11 +146,19 @@ body {
 
 /*Velkommen tekst og slogan på hjemsiden start*/
 
-#hjemtekst {
+.hjemtekst {
+    margin: auto;
     text-align: center;
     font-size: 6em;
     color: #074B97;
     margin-top: 5%;
+    animation: fylltekst 4s;
+}
+
+.line{
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
 }
 
 #hjemslogan {
@@ -273,9 +281,12 @@ footer {
     }
 }
 
-@keyframes glowmove {
+@keyframes fylltekst {
+    0% {
+        width: 0;
+    }
     100% {
-        transform: rotate(360deg);
+        width: 11em;
     }
 }
 
@@ -386,7 +397,7 @@ footer {
 }
 
 
-/*Markus*/
+/*Markus - Contact*/
 
 #kartContainer {
     margin: auto;
@@ -427,7 +438,6 @@ footer {
     position: relative;
     margin: auto;
     height: 600px;
-
 }
 
 #kart {
@@ -435,9 +445,9 @@ footer {
     width: 900px;
     height: 400px;
     top: 150px;
-
 }
 
+/*En klasse for å gjøre design av prikker på kartet felles. Alle blir røde, alle har lengde og bredde 10px og en border-radius på 10px for å gjøre de runde*/
 .map_dot {
     background-color: #a60808;
     width: 10px;
@@ -446,12 +456,14 @@ footer {
     position: absolute;
 }
 
+/*Felles hover for alle i map_dot klassen. Når peker er på prikk så vil den bli større, 25x25px*/
 .map_dot:hover {
     width: 25px;
     height: 25px;
     border-radius: 25px;
 }
 
+/*map_dot2 klasse for å lage gul prikk*/
 .map_dot2 {
     background-color: yellow;
     width: 10px;
@@ -460,11 +472,14 @@ footer {
     position: absolute;
 }
 
+/*Hover effekt på alle prikker i klassen map_dot2*/
 .map_dot2:hover {
     width: 25px;
     height: 25px;
     border-radius: 25px;
 }
+
+/*Alle .by:hover{} nedover er laget for at prikken ikke skal bli helt feil plassert når man hovrer. Den blir flyttet 5 piksler til venstre og oppover for at det ikke skal uferdig/choppy ut. Det vil også bli mye lettere å holde musepeker over sirkel*/
 
 #oslo1 {
     opacity: 0;
@@ -804,3 +819,334 @@ footer {
 .niamey:hover~#fakta2>#niamey2 {
     opacity: 1;
 }
+
+/* Christian sin css*/
+
+
+
+#CTcontainer{
+
+    position: absolute;
+    display: block;
+    height: 600px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 4%;
+    background: rgba(255, 0, 0, 0);
+    overflow: hidden;
+    border-radius: 50px;
+
+
+}
+
+#CTbar{
+
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 10px;
+    background-color: darkgray;
+    left: 48.5%;
+
+
+}
+
+.CTsmallbar{
+    position: absolute;
+    display: inline-block;
+    height: 1%;
+    width: 4%;
+    background-color: blue;
+    border-radius: 30px;
+    opacity: 0;
+}
+
+.CTyearbubble{
+
+    position: absolute;
+    display: inline-block;
+    height: 8%;
+    width: 5%;
+    background-color: lightcoral;
+    border: 5px solid white;
+    border-radius: 100%;
+
+}
+
+.CTtextbubble{
+    position: absolute;
+    display: inline-block;
+    height: 15%;
+    width: 0;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: lightgray;
+
+}
+
+#CTsmallbar1{
+    top: 7%;
+    left: 54%;
+    animation-name: FadeIn;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+#CTsmallbar2{
+    top: 23%;
+    left: 40%;
+    animation-name: FadeIn;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+#CTsmallbar3{
+    top: 39%;
+    left: 54%;
+    animation-name: FadeIn;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+#CTsmallbar4{
+    top: 55%;
+    left: 40%;
+    animation-name: FadeIn;
+    animation-delay: 7s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+#CTsmallbar5{
+    top: 71%;
+    left: 54%;
+    animation-name: FadeIn;
+    animation-delay: 9s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+#CTsmallbar6{
+    top: 87%;
+    left: 40%;
+    animation-name: FadeIn;
+    animation-delay: 11s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+#CTyearbubble1{
+
+    left: -10%;
+    top: 3%;
+    animation-name: enterfromleft;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#CTyearbubble2{
+
+    right: -10%;
+    top: 19%;
+    animation-name: enterfromright;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+#CTyearbubble3{
+
+    right: -10%;
+    top: 35%;
+    animation-name: enterfromleft;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+#CTyearbubble4{
+
+    right: -10%;
+    top: 51%;
+    animation-name: enterfromright;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+#CTyearbubble5{
+
+    right: -10%;
+    top: 67%;
+    animation-name: enterfromleft;
+    animation-duration: 1s;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+
+#CTyearbubble6{
+
+    right: -10%;
+    top: 83%;
+    animation-name: enterfromright;
+    animation-duration: 1s;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+
+
+
+
+@keyframes enterfromleft{
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 46%;
+
+    }
+}
+
+@keyframes enterfromright{
+
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: 46%;
+    }
+
+}
+
+
+
+
+#CTtextbubble1{
+
+    left: 60%;
+    top: 0.5%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+
+}
+
+#CTtextbubble2{
+
+    left: 3%;
+    top: 16%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 3.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#CTtextbubble3{
+
+    left: 60%;
+    top: 32%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 5.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#CTtextbubble4{
+
+    left: 3%;
+    top: 48%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 7.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#CTtextbubble5{
+
+    left: 60%;
+    top: 64%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 9.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+
+#CTtextbubble6{
+
+    left: 3%;
+    top: 80%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 11.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+
+.CTp{
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    font-family:'lato', sans-serif;
+    font-size: 15px;
+}
+
+.CTyearP{
+
+    font-family: cursive;
+    margin-left: 17%;
+    margin-top: 20%;
+}
+
+@keyframes fall{
+    100%{
+        width: 35%;
+        border: 3px solid black;
+    }
+
+}
+
+
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Christian sin css slutt*/
