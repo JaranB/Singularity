@@ -6,9 +6,14 @@
 }
 
 a,
-h1 {
+h1,
+h2 {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    color: #074B97;
 }
 
 p {
@@ -59,31 +64,25 @@ li a:hover {
 
 /*Navigator slutt*/
 
-#navcontainer {
-    min-height: 100%;
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
 
 /*html, body start*/
 
 html,
 body {
-    background-image: url(bilder/bg.jpg);
+    background-image: url(bilder/bg.jpg); /* https://pbs.twimg.com/media/Cw2GfpTUkAAPhzW.jpg */
     background-size: cover;
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 #menu {
     position: relative;
     margin: auto;
     top: 5%;
-    width: 35%;
-    height: 45%;
+    width: 665px;
+    height: 455px;
 }
 
 #menu:hover .circle {
@@ -146,30 +145,28 @@ body {
 
 /*Velkommen tekst og slogan på hjemsiden start*/
 
-.hjemtekst {
+#hjemtekst {
     margin: auto;
     text-align: center;
     font-size: 6em;
-    color: #074B97;
     margin-top: 5%;
-    animation: fylltekst 4s;
-}
-
-.line{
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
+    animation: fyllhjemtekst 4s;
 }
 
 #hjemslogan {
-    font-family: 'Lato', sans-serif;
     text-align: center;
     font-size: 1em;
     float: right;
     margin-top: 0.5%;
-    padding-right: 32%;
+    padding-right: 15%;
+    animation: fyllslogantekst 4s;
+
 }
 
+#hjemslogantekst {
+    width: 1060px;
+    margin: auto;
+}
 
 /*Velkommen tekst og slogan på hjemsiden slutt*/
 
@@ -188,7 +185,7 @@ body {
 }
 
 
-/*Container med hovedinnhold på alle siden slutt*/
+/*Container med hovedinnhold på alle sider slutt*/
 
 #sideinnhold {
     text-align: center;
@@ -205,14 +202,18 @@ body {
 
 footer {
     background-color: #3A4047;
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
-    height: 4%;
+    height: 40px;
     width: 100%;
     overflow: hidden;
     text-align: center;
-    line-height: 250%;
+}
+
+ p {
+    position: relative;
+    top: 10px;
 }
 
 
@@ -281,12 +282,21 @@ footer {
     }
 }
 
-@keyframes fylltekst {
+@keyframes fyllhjemtekst {
     0% {
-        width: 0;
+        -webkit-transform: translate(-160%);
     }
     100% {
-        width: 11em;
+        -webkit-transform: translate(0%);
+    }
+}
+
+@keyframes fyllslogantekst {
+    0% {
+        -webkit-transform: translate(260%);
+    }
+    100% {
+        -webkit-transform: translate(0%);
     }
 }
 
