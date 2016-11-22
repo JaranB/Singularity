@@ -74,7 +74,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
 }
 
 #menu {
@@ -1134,3 +1133,130 @@ footer {
     }
 }
 /* Christian sin css slutt*/
+
+/* Solutions, Henrik */
+#solutions{
+   position: relative;
+    height: 100%;
+    width: 100%;
+    }
+#solutionstitle{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+#solutionstext{
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 40px;
+}
+/* Lysbildefremviser */
+#slides{
+    background: black;
+    border: 5px solid white;
+    height: 392px;
+    width: 700px;
+    margin: auto;
+    position: relative;
+}
+/* Skjuler bildene utenfor rammen */
+#hiddenslides{
+    overflow: hidden;
+    height: 392px;
+}
+/* Så bildene fyller rammen*/
+#slides ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+/* Bildene starter utenfor rammen*/
+#slides li{
+    position: absolute;
+    list-style: none;
+    top: -397;
+}
+/* Bildestørrelsen */
+#slides img{
+    width:700px;
+    height:392px;
+}
+
+/* Lysbilde-Animasjonen*/
+#slides li.s1_animation{
+    animation: slideshow1 20s infinite linear;
+}
+#slides li.s2_animation{
+    animation: slideshow2 20s infinite linear;
+}
+#slides li.s3_animation{
+    animation: slideshow3 20s infinite linear;
+}
+#slides li.s4_animation{
+    animation: slideshow4 20s infinite linear;
+}
+@keyframes slideshow1{
+   0% {top: 0px;}
+   5% {top: 0px; }
+   20% {top: 0px; opacity:1; z-index:0;}
+   25% {top: 397px; opacity: 0; z-index: 0;}
+   26% {top: -397px; opacity: 0; z-index: -1;}
+   90% {top: -397px; opacity: 0; z-index: 0;}
+   95% {top: -397px; opacity: 0;}
+   100% {top: 0px; opacity: 1;}
+}
+@keyframes slideshow2{
+    0% {top: -397px; opacity: 0;}
+    20% {top: -397px; opacity: 0;}
+    25% {top: 0px; opacity: 1;}
+    30% {top: 0px; opacity: 1;}
+    45% {top: 0px; opacity: 1; z-index: 0;}
+    50% {top: 397px; opacity: 0; z-index: 0;}
+    51% {top: -397px; opacity: 0; z-index: -1;}
+    100% {top: -397px; opacity: 0; z-index: -1;}
+}
+@keyframes slideshow3{
+    0% {top: -397px; opacity: 0;}
+    45% {top: -397px; opacity: 0;}
+    50% {top: 0px; opacity: 1;}
+    55% {top: 0px; opacity: 1;}
+    70% {top: 0px; opacity: 1;}
+    75% {top: 397px; opacity: 0; z-index: 0;}
+    76% {top: -397px; opacity: 0; z-index: -1;}
+    100% {top: -397px; opacity: 0; z-index: -1;}
+}
+@keyframes slideshow4{
+    0% {top: -397px; opacity: 0;}
+    70% {top: -397px; opacity: 0;}
+    75% {top: 0px; opacity: 1;}
+    80% {top: 0px; opacity: 1;}
+    95% {top: 0px; opacity: 1; z-index: 0;}
+    100% {top: 397px; opacity: 0; z-index: 0;}
+    105% {top: -397px; opacity: 0; z-index: -1;}
+}
+#slides .s_info{
+    background: black;
+    opacity: 0.7;
+    width: 300px;
+    height: 60px;
+    position: relative;
+    bottom: 60px;
+    left: -300px;
+}
+#slides .s_info h1 {
+    color: #fff;
+    font-size: 24px;
+}
+#slides .s_info {
+    transition: all 0.3s ease-in-out;
+}
+
+#slides li#solution1:hover .s_info,
+#slides li#solution2:hover .s_info,
+#slides li#solution3:hover .s_info,
+#slides li#solution4:hover .s_info {
+   left: 0px;
+}
+#slides:hover li{
+    animation-play-state: paused;
+}
+/* Solutions, Henrik SLUTT */
