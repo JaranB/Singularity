@@ -1139,18 +1139,11 @@ footer {
 /* Christian sin css slutt*/
 
 /* Solutions, Henrik */
-#solutions{
-   position: relative;
-    height: 100%;
-    width: 100%;
-    }
+
 #solutionstitle{
     font-size: 20px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
 }
 #solutionstext{
-    font-family: 'Lato', sans-serif;
     margin-bottom: 40px;
 }
 /* Lysbildefremviser */
