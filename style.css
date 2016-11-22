@@ -1,12 +1,8 @@
 /*Settings generelt for siden start*/
 
-html {
-    height: 100%;
-}
-
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 a,
@@ -71,7 +67,10 @@ li a:hover {
 
 /*html, body start*/
 
-html,
+html {
+    height: 100%;
+}
+
 body {
     position: relative;
     background-image: url(bilder/bg.jpg); /* https://pbs.twimg.com/media/Cw2GfpTUkAAPhzW.jpg */
@@ -170,6 +169,7 @@ body {
 #hjemslogantekst {
     width: 1060px;
     margin: auto;
+    overflow: hidden;
 }
 
 /*Velkommen tekst og slogan på hjemsiden slutt*/
