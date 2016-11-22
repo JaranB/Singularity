@@ -417,6 +417,7 @@ footer {
 
 #fakta1 p {
     position: relative;
+    text-align: left;
 }
 
 #fakta2 {
@@ -431,6 +432,7 @@ footer {
 
 #fakta2 p {
     position: relative;
+    text-align: left;
 }
 
 #kart_boks {
