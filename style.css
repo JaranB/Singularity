@@ -1,0 +1,1722 @@
+/*Home kode - start*/
+
+
+/*Settings generelt for siden - start*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+h1,
+h2,
+p {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    color: #074B97;
+}
+
+p {
+    font-size: 1.2em;
+    top: 10px;
+}
+
+
+/*Settings generelt for siden - slutt*/
+
+
+/*Header og navigator - start*/
+
+header {
+    position: relative;
+    overflow: hidden;
+    background-color: #3A4047;
+}
+
+#logo {
+    float: left;
+    padding-left: 5%;
+    max-width: 50%;
+}
+
+#logo img {
+    margin-top: 4px;
+    max-width: 100%;
+}
+
+#navbuttons {
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    max-width: 100%;
+    margin-top: 35px;
+    margin-right: 5%;
+}
+
+#navbuttons a {
+    color: #b7ffff;
+    padding: 10px;
+    display: inline-block;
+}
+
+#navbuttons a:hover {
+    background-color: #111;
+    border-radius: 10%;
+}
+
+
+/*Header og navigator - slutt*/
+
+
+/*html, body (alt innenfor body) - start*/
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-image: url(bilder/bg.jpg);
+    /* https://pbs.twimg.com/media/Cw2GfpTUkAAPhzW.jpg */
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+#menu {
+    position: relative;
+    margin: auto;
+    top: 5%;
+    width: 665px;
+    height: 455px;
+    max-width: 100%;
+}
+
+#menu:hover .circle {
+    -webkit-animation-play-state: paused;
+}
+
+
+/*Sirkler i menyen på hjemsiden - start*/
+
+.circle {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    font-size: 1.3em;
+    color: #fff;
+    text-align: center;
+    background: #3A4047;
+    opacity: 0.97;
+}
+
+.circle p {
+    position: relative;
+    top: 45%;
+}
+
+.circle1 {
+    margin-left: 35%;
+    -webkit-animation-name: circle1move;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.circle2 {
+    margin-top: 2em;
+    margin-left: 35%;
+    -webkit-animation-name: circle2move;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.circle3 {
+    margin-top: -16em;
+    -webkit-animation-name: circle3move;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.circle4 {
+    margin-top: -10em;
+    margin-left: 69%;
+    -webkit-animation-name: circle4move;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+
+/*Sirkler i menyen på hjemsiden - stopp*/
+
+
+/*Velkommen tekst og slogan på hjemsiden - start*/
+
+#homeslogantext {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#hometext {
+    margin: auto;
+    text-align: center;
+    font-size: 6em;
+    margin-top: 5%;
+    -webkit-animation: fillhometext 4s;
+}
+
+#homeslogan {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5%;
+    padding-left: 700px;
+    -webkit-animation: fillslogantext 4s;
+}
+
+
+/*Velkommen tekst og slogan på hjemsiden - slutt*/
+
+
+/*Container med hovedinnhold på alle sider - start*/
+
+#container {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 5%;
+    border-radius: 2%;
+    background-color: #3A4047;
+    position: relative;
+}
+
+
+/*Container med hovedinnhold på alle sider - slutt*/
+
+#sitecontent {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    padding: 1%;
+}
+
+
+/*html, body (alt innenfor body) - slutt*/
+
+
+/*Pusher og footer - start*/
+
+.push {
+    height: 70px;
+}
+
+footer {
+    background-color: #3A4047;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    text-align: center;
+}
+
+footer p {
+    padding: 10px;
+}
+
+
+/*Pusher og footer - slutt*/
+
+
+/*Animasjoner hovedside - start*/
+
+@-webkit-keyframes circle1move {
+    25% {
+        -webkit-transform: translate(230px, 120px);
+    }
+    50% {
+        -webkit-transform: translate(0px, 250px);
+    }
+    75% {
+        -webkit-transform: translate(-230px, 120px);
+    }
+    100% {
+        -webkit-transform: translate(0em, 0em);
+    }
+}
+
+@-webkit-keyframes circle2move {
+    25% {
+        -webkit-transform: translate(-230px, -120px);
+    }
+    50% {
+        -webkit-transform: translate(0px, -250px);
+    }
+    75% {
+        -webkit-transform: translate(230px, -120px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes circle3move {
+    25% {
+        -webkit-transform: translate(230px, -120px);
+    }
+    50% {
+        -webkit-transform: translate(480px, 0px);
+    }
+    75% {
+        -webkit-transform: translate(230px, 120px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes circle4move {
+    25% {
+        -webkit-transform: translate(-230px, 120px);
+    }
+    50% {
+        -webkit-transform: translate(-480px, 0px);
+    }
+    75% {
+        -webkit-transform: translate(-230px, -120px);
+    }
+    100% {
+        -webkit-transform: translate(0em, 0em);
+    }
+}
+
+@-webkit-keyframes fillhometext {
+    0% {
+        -webkit-transform: translate(-160%);
+    }
+    100% {
+        -webkit-transform: translate(0%);
+    }
+}
+
+@-webkit-keyframes fillslogantext {
+    0% {
+        -webkit-transform: translate(70%);
+    }
+}
+
+
+/*Animasjoner hoveside - slutt*/
+
+
+/*Home kode - slutt*/
+
+
+/*CompanyCSS*/
+
+
+/*#company=container for companysite*/
+
+#company {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*Company Animation*/
+
+.companyAni {
+    position: absolute;
+    top: 50%;
+    left: -300px;
+    animation: moveAni 30s linear infinite;
+    -webkit-animation: moveAni 30s linear infinite;
+}
+
+#employee1 {
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+
+#employee2 {
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+
+#employee3 {
+    animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+}
+
+#employee4 {
+    animation-delay: 20s;
+    -webkit-animation-delay: 20s;
+}
+
+#employee5 {
+    animation-delay: 25s;
+    -webkit-animation-delay: 25s;
+}
+
+#pics {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes moveAni {
+    from {
+        left: -300px;
+    }
+    to {
+        left: 2100px;
+    }
+}
+
+#companywrap:hover .companyAni {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+
+/*Company Animation end*/
+
+
+/*Textbox CSS*/
+
+.chat {
+    position: relative;
+    top: 70px;
+    height: 150px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: grey;
+    border: 3px solid black;
+    border-radius: 30%;
+    display: none;
+    padding-top: 10px;
+}
+
+#employee:hover~#textBox {
+    display: block
+}
+
+#employee1:hover~#textBox1 {
+    display: block
+}
+
+#employee2:hover~#textBox2 {
+    display: block
+}
+
+#employee3:hover~#textBox3 {
+    display: block
+}
+
+#employee4:hover~#textBox4 {
+    display: block
+}
+
+#employee5:hover~#textBox5 {
+    display: block
+}
+
+
+/*Textbox end*/
+
+
+/*CompanyCSSend*/
+
+
+/*Markus - Contact*/
+
+#kartContainer {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Boksene som fakta teksten dukker opp i*/
+
+#fakta1 {
+    width: 400px;
+    height: 115px;
+    background-color: darkgray;
+    border: groove black 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 5%;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+#fakta1 p {
+    text-align: left;
+    padding: 10px;
+}
+
+#fakta2 {
+    width: 400px;
+    height: 115px;
+    border: groove black 3px;
+    right: 0px;
+    background-color: darkgray;
+    border-radius: 20px;
+    position: absolute;
+    top: 5%;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+#fakta2 p {
+    text-align: left;
+    padding: 10px;
+}
+
+
+/*Boks rundt kartet*/
+
+#kart_boks {
+    position: relative;
+    width: 900px;
+    margin: auto;
+    height: 600px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#kart_boks img {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    width: 900px;
+    height: 400px;
+    top: 150px;
+}
+
+
+/*En klasse for å gjøre design av prikker på kartet felles. Alle blir røde, alle har lengde og bredde 10px og en border-radius på 10px for å gjøre de runde*/
+
+.map_dot {
+    background-color: #a60808;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+/*Felles hover for alle i map_dot klassen. Når peker er på prikk så vil den bli større, 25x25px*/
+
+.map_dot:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+
+/*map_dot2 klasse for å lage gul prikk*/
+
+.map_dot2 {
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+/*Hover effekt på alle prikker i klassen map_dot2*/
+
+.map_dot2:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+
+/*Alle .by:hover{} nedover er laget for at prikken ikke skal bli helt feil plassert når man hovrer. Den blir flyttet 5 piksler til venstre og oppover for at det ikke skal uferdig/choppy ut. Det vil også bli mye lettere å holde musepeker over sirkel*/
+
+#oslo1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#oslo2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.oslo {
+    left: 44%;
+    top: 35%;
+}
+
+.oslo:hover {
+    left: 43%;
+    top: 34%;
+}
+
+.oslo:hover~#fakta1>#oslo1 {
+    opacity: 1;
+}
+
+.oslo:hover~#fakta2>#oslo2 {
+    opacity: 1;
+}
+
+#roma1 {
+    position: absolute;
+    opacity: 0;
+}
+
+#roma2 {
+    position: absolute;
+    opacity: 0;
+}
+
+.roma {
+    left: 45%;
+    top: 43%;
+}
+
+.roma:hover {
+    left: 44%;
+    top: 41%;
+}
+
+.roma:hover~#fakta1>#roma1 {
+    opacity: 1;
+}
+
+.roma:hover~#fakta2>#roma2 {
+    opacity: 1;
+}
+
+#johannesburg1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#johannesburg2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.johannesburg {
+    left: 50%;
+    top: 76%;
+}
+
+.johannesburg:hover {
+    left: 49%;
+    top: 74%;
+}
+
+.johannesburg:hover~#fakta1>#johannesburg1 {
+    opacity: 1;
+}
+
+.johannesburg:hover~#fakta2>#johannesburg2 {
+    opacity: 1;
+}
+
+.new_york_city {
+    left: 20%;
+    top: 43%;
+}
+
+#new_york_city1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#new_york_city2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.new_york_city:hover {
+    left: 19%;
+    top: 41%;
+}
+
+.new_york_city:hover~#fakta1>#new_york_city1 {
+    opacity: 1;
+}
+
+.new_york_city:hover~#fakta2>#new_york_city2 {
+    opacity: 1;
+}
+
+#moscow1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#moscow2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.moscow {
+    left: 51%;
+    top: 37%;
+}
+
+.moscow:hover {
+    left: 50%;
+    top: 35%;
+}
+
+.moscow:hover~#fakta1>#moscow1 {
+    opacity: 1;
+}
+
+.moscow:hover~#fakta2>#moscow2 {
+    opacity: 1;
+}
+
+#sydney1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#sydney2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.sydney {
+    left: 85%;
+    top: 79%;
+}
+
+.sydney:hover {
+    left: 84%;
+    top: 77%;
+}
+
+.sydney:hover~#fakta1>#sydney1 {
+    opacity: 1;
+}
+
+.sydney:hover~#fakta2>#sydney2 {
+    opacity: 1;
+}
+
+
+/*Brasília, hovedstad i brazil*/
+
+#brasilia1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#brasilia2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.brasilia {
+    left: 27%;
+    top: 72%;
+}
+
+.brasilia:hover {
+    left: 26%;
+    top: 70%;
+}
+
+.brasilia:hover~#fakta1>#brasilia1 {
+    opacity: 1;
+}
+
+.brasilia:hover~#fakta2>#brasilia2 {
+    opacity: 1;
+}
+
+#shanghai1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#shanghai2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.shanghai {
+    left: 76%;
+    top: 47%;
+}
+
+.shanghai:hover {
+    left: 75%;
+    top: 45%;
+}
+
+.shanghai:hover~#fakta1>#shanghai1 {
+    opacity: 1;
+}
+
+.shanghai:hover~#fakta2>#shanghai2 {
+    opacity: 1;
+}
+
+#beijing1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#beijing2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.beijing {
+    left: 74%;
+    top: 43%;
+}
+
+.beijing:hover {
+    left: 73%;
+    top: 41%;
+}
+
+.beijing:hover~#fakta1>#beijing1 {
+    opacity: 1;
+}
+
+.beijing:hover~#fakta2>#beijing2 {
+    opacity: 1;
+}
+
+#tibet1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#tibet2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.tibet {
+    left: 69%;
+    top: 48%;
+}
+
+.tibet:hover {
+    left: left: 68%;
+    top: 46%;
+}
+
+.tibet:hover~#fakta1>#tibet1 {
+    opacity: 1;
+}
+
+.tibet:hover~#fakta2>#tibet2 {
+    opacity: 1;
+}
+
+#dalas1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#dalas2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.dalas {
+    left: 13%;
+    top: 47%;
+}
+
+.dalas:hover {
+    left: 12%;
+    top: 45%;
+}
+
+.dalas:hover~#fakta1>#dalas1 {
+    opacity: 1;
+}
+
+.dalas:hover~#fakta2>#dalas2 {
+    opacity: 1;
+}
+
+#niamey1 {
+    opacity: 0;
+    position: absolute;
+}
+
+#niamey2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.niamey {
+    left: 46%;
+    top: 60%;
+}
+
+.niamey:hover {
+    left: 45%;
+    top: 58%;
+}
+
+.niamey:hover~#fakta1>#niamey1 {
+    opacity: 1;
+}
+
+.niamey:hover~#fakta2>#niamey2 {
+    opacity: 1;
+}
+
+
+/* Christian sin css*/
+
+
+/*Containeren for siden*/
+
+#CTcontainer {
+    position: relative;
+    display: block;
+    height: 600px;
+    width: 90%;
+    margin: auto;
+    background: rgba(255, 0, 0, 0);
+    overflow: hidden;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+/*Den vertikale tidslinjen*/
+
+#CTbar {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 10px;
+    background-color: darkgray;
+    left: 48.5%;
+}
+
+
+/*De små linjene mellom årstall og infoboks*/
+
+.CTsmallbar {
+    position: absolute;
+    display: inline-block;
+    height: 0.4em;
+    width: 8%;
+    background-color: black;
+    border-radius: 30px;
+    opacity: 0;
+    margin: auto;
+}
+
+
+/*Sirklene med årstall*/
+
+.CTyearbubble {
+    position: absolute;
+    display: block;
+    height: 8%;
+    width: 5%;
+    background-color: lightcoral;
+    border: 5px solid white;
+    border-radius: 100%;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*Infoboksene*/
+
+.CTtextbubble {
+    position: absolute;
+    display: inline-block;
+    height: 6em;
+    width: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+
+/*Titlene ved sidene av årstallene*/
+
+.CTtitle {
+    position: absolute;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    width: 7%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0.5em 1em 1.5em 1em;
+}
+
+
+/*Posisjonering for hver tittlel*/
+
+#CTtitle1 {
+    top: 4.5%;
+    left: 33%;
+    animation-name: FadeIn2;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#CTtitle2 {
+    top: 24.5%;
+    left: 54%;
+    animation-name: FadeIn2;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+#CTtitle3 {
+    top: 44.5%;
+    left: 33%;
+    animation-name: FadeIn2;
+    animation-duration: 2s;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+
+#CTtitle4 {
+    top: 64.5%;
+    left: 54%;
+    animation-name: FadeIn2;
+    animation-duration: 2s;
+    animation-delay: 13s;
+    animation-fill-mode: forwards;
+}
+
+#CTtitle5 {
+    top: 84.5%;
+    left: 33%;
+    animation-name: FadeIn2;
+    animation-duration: 2s;
+    animation-delay: 17s;
+    animation-fill-mode: forwards;
+}
+
+
+/*posisjonering for hver "bindestrek"*/
+
+#CTsmallbar1 {
+    top: 7.5%;
+    left: 53.4%;
+    animation-name: FadeIn;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#CTsmallbar2 {
+    top: 27.5%;
+    left: 37%;
+    animation-name: FadeIn;
+    animation-delay: 6s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#CTsmallbar3 {
+    top: 47.5%;
+    left: 53.4%;
+    animation-name: FadeIn;
+    animation-delay: 10s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#CTsmallbar4 {
+    top: 67.5%;
+    left: 37%;
+    animation-name: FadeIn;
+    animation-delay: 14s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#CTsmallbar5 {
+    top: 87.5%;
+    left: 53.4%;
+    animation-name: FadeIn;
+    animation-delay: 18s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+
+/*posisjonering for hver årstallsboble*/
+
+#CTyearbubble1 {
+    left: -10%;
+    top: 3%;
+    animation-name: enterfromleft;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#CTyearbubble2 {
+    right: -10%;
+    top: 23%;
+    animation-name: enterfromright;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#CTyearbubble3 {
+    right: -10%;
+    top: 43%;
+    animation-name: enterfromleft;
+    animation-duration: 1s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#CTyearbubble4 {
+    right: -10%;
+    top: 63%;
+    animation-name: enterfromright;
+    animation-duration: 1s;
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#CTyearbubble5 {
+    right: -10%;
+    top: 83%;
+    animation-name: enterfromleft;
+    animation-duration: 1s;
+    animation-delay: 16s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+
+/*posisjonering for hver infoboks*/
+
+#CTtextbubble1 {
+    left: 63%;
+    top: 0.5%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 2.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#CTtextbubble2 {
+    left: 0%;
+    top: 20%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 5.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#CTtextbubble3 {
+    left: 63%;
+    top: 40%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 9.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#CTtextbubble4 {
+    left: 0%;
+    top: 60%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 13.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#CTtextbubble5 {
+    left: 63%;
+    top: 80%;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-delay: 17.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+
+/*Styling for tekst i titlene*/
+
+#CTtitlep {
+    text-align: center;
+    color: antiquewhite;
+}
+
+
+/*Styling for paragrafene inne i infoboksene*/
+
+.CTp {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+/*Styling for årstallene*/
+
+.CTyearP {
+    margin-top: 10%;
+    margin-left: auto;
+    font-size: 1em
+}
+
+
+/*animasjonen til årstallene som kommer fra venstre side*/
+
+@keyframes enterfromleft {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 46%;
+    }
+}
+
+
+/*animasjonen til årstallene som kommer fra høyre side*/
+
+@keyframes enterfromright {
+    0% {
+        left: 110%;
+    }
+    100% {
+        left: 46%;
+    }
+}
+
+
+/*animasjon for infoboksene som dukker opp*/
+
+@keyframes fall {
+    100% {
+        width: 35%;
+        border: 3px solid black;
+        padding: 0.1em 0.1em 0.1em 0.1em;
+    }
+}
+
+
+/*animasjon for "bindestrekene" som dukker opp*/
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*animasjon for titlene som dukker opp*/
+
+@keyframes FadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+/* Christian sin css slutt*/
+
+
+/* Solutions, Henrik */
+
+#solutionstitle {
+    font-size: 20px;
+}
+
+#solutionstext {
+    margin-bottom: 40px;
+    padding: 10px 100px 10px 100px;
+}
+
+
+/* Lysbildefremviser */
+
+#slides {
+    background: black;
+    border: 5px solid white;
+    height: auto;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+}
+
+
+/* Skjuler bildene utenfor rammen */
+
+#hiddenslides {
+    overflow: hidden;
+    height: 392px;
+}
+
+
+/* Så bildene fyller rammen*/
+
+#slides ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+/* Bildene starter utenfor rammen*/
+
+#slides li {
+    position: absolute;
+    top: -397;
+}
+
+
+/* Bildestørrelsen */
+
+#slides img {
+    width: 700px;
+    height: 392px;
+}
+
+
+/* Lysbilde-Animasjonen*/
+
+#slides li.s1_animation {
+    -webkit-animation: slideshow1 20s infinite linear;
+}
+
+#slides li.s2_animation {
+    -webkit-animation: slideshow2 20s infinite linear;
+}
+
+#slides li.s3_animation {
+    -webkit-animation: slideshow3 20s infinite linear;
+}
+
+#slides li.s4_animation {
+    -webkit-animation: slideshow4 20s infinite linear;
+}
+
+@-webkit-keyframes slideshow1 {
+    0% {
+        top: 0px;
+    }
+    5% {
+        top: 0px;
+    }
+    20% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    25% {
+        top: 397px;
+        opacity: 0;
+        z-index: 0;
+    }
+    26% {
+        top: -397px;
+        opacity: 0;
+        z-index: -1;
+    }
+    90% {
+        top: -397px;
+        opacity: 0;
+        z-index: 0;
+    }
+    95% {
+        top: -397px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideshow2 {
+    0% {
+        top: -397px;
+        opacity: 0;
+    }
+    20% {
+        top: -397px;
+        opacity: 0;
+    }
+    25% {
+        top: 0px;
+        opacity: 1;
+    }
+    30% {
+        top: 0px;
+        opacity: 1;
+    }
+    45% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    50% {
+        top: 397px;
+        opacity: 0;
+        z-index: 0;
+    }
+    51% {
+        top: -397px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -397px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-webkit-keyframes slideshow3 {
+    0% {
+        top: -397px;
+        opacity: 0;
+    }
+    45% {
+        top: -397px;
+        opacity: 0;
+    }
+    50% {
+        top: 0px;
+        opacity: 1;
+    }
+    55% {
+        top: 0px;
+        opacity: 1;
+    }
+    70% {
+        top: 0px;
+        opacity: 1;
+    }
+    75% {
+        top: 397px;
+        opacity: 0;
+        z-index: 0;
+    }
+    76% {
+        top: -397px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -397px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-webkit-keyframes slideshow4 {
+    0% {
+        top: -397px;
+        opacity: 0;
+    }
+    70% {
+        top: -397px;
+        opacity: 0;
+    }
+    75% {
+        top: 0px;
+        opacity: 1;
+    }
+    80% {
+        top: 0px;
+        opacity: 1;
+    }
+    95% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    100% {
+        top: 397px;
+        opacity: 0;
+        z-index: 0;
+    }
+    105% {
+        top: -397px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+#slides .s_info {
+    background: black;
+    opacity: 0.7;
+    width: 300px;
+    height: 60px;
+    position: relative;
+    bottom: 60px;
+    left: -300px;
+}
+
+#slides .s_info h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+#slides .s_info {
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#slides li#solution1:hover .s_info,
+#slides li#solution2:hover .s_info,
+#slides li#solution3:hover .s_info,
+#slides li#solution4:hover .s_info {
+    left: 0px;
+}
+
+#slides:hover li {
+    -webkit-animation-play-state: paused;
+}
+
+
+/* Solutions SLUTT */
+
+
+/* Solutions - Robots */
+
+/* En container med relative position og alle andre elementene skal plasseres med position absolute inn */
+
+#robots {
+    position: relative;
+    width: 1200px;
+    height: 820px;
+    margin: auto;
+    max-width: 100%;
+}
+
+#robots p {
+    font-size: 15px;
+}
+
+/*Felles-verdier på alle boksene på venstre side */
+
+.leftside {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.leftside img {
+    left: 0%;
+}
+
+/* Felles-verdier på alle boksene på venstre side */
+
+.rightside {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    right: 0;
+}
+
+.rightside img {
+    right: 0%;
+}
+
+/* Alle bildene måte ha same størrelse, design, opacity */
+
+.robotpics {
+    position: absolute;
+    width: 30%;
+    border-radius: 50%;
+    opacity: 0.3;
+    -webkit-transition-duration: 3s;
+    transition-duration: 3s;
+    top: 10px;
+}
+
+/* Felles-verdier for alle linjer/teksten, har laget animasjon så de blinker litt. */
+
+.lines {
+    position: absolute;
+    width: 170px;
+    height: 80px;
+    text-align: center;
+    background-color: darkgrey;
+    border-radius: 30%;
+    padding: 7%;
+    text-decoration: none;
+    -webkit-animation: linesmove 3s infinite;
+    -webkit-animation-timing-function: ease-in;
+    animation: linesmove 3s infinite;
+    animation-timing-function: ease-in;
+}
+
+.left {
+    right: 0px;
+}
+
+.right {
+    left: 0px;
+}
+
+@-webkit-keyframes linesmove {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes linesmove {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+#box2 {
+    top: 25%;
+}
+
+#box3 {
+    top: 50%;
+}
+
+#box4 {
+    bottom: 0%;
+}
+
+#box6 {
+    top: 25%;
+}
+
+#box7 {
+    top: 50%;
+}
+
+#box8 {
+    bottom: 0%;
+}
+
+.lines:hover {
+    color: red;
+}
+
+/* Når man hover over teksten, bilde av roboten som tilhører den teksten blir større med rotasjon. */
+
+#box1:hover #robot1 {
+    opacity: 1;
+    width: 55%;
+    margin: auto;
+    transform: rotate(360deg);
+}
+
+#box2:hover #robot2 {
+    opacity: 1;
+    width: 55%;
+    margin: auto;
+    transform: rotate(360deg);
+}
+
+#box3:hover #robot3 {
+    opacity: 1;
+    width: 55%;
+    margin: auto;
+    transform: rotate(360deg);
+}
+
+#box4:hover #robot4 {
+    opacity: 1;
+    width: 55%;
+    margin: auto;
+    transform: rotate(360deg);
+}
+
+#box5:hover #robot5 {
+    opacity: 1;
+    width: 55%;
+    margin: auto;
+    transform: rotate(360deg);
+}
+
+#box6:hover #robot6 {
+    opacity: 1;
+    width: 55%;
+    margin: auto;
+    transform: rotate(360deg);
+}
+
+#box7:hover #robot7 {
+    opacity: 1;
+    width: 55%;
+    margin: auto;
+    transform: rotate(360deg);
+}
+
+#box8:hover #robot8 {
+    opacity: 1;
+    width: 55%;
+    margin: auto;
+    transform: rotate(360deg);
+}
